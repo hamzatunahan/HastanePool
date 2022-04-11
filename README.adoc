@@ -51,19 +51,13 @@ The Object Pool object defined outside the threads receives or leaves objects wi
 
 image::uml/UML.png[UML Diagram for This Example of Object Pool Design Pattern]
 
-=== References
-
-* http://www.blackwasp.co.uk/ObjectPool.aspx[Blackwasp]
-* https://alimozdemir.com/posts/design-pattern-serisi-2-object-pool/[Alim
-Özdemir]
-* https://github.com/ttnny/object-pool-example[GitHub - ttny]
-* https://plantuml.com/[Plant UML]
-* https://real-world-plantuml.com/[Real World Plant UML]
-
+== References
 
 
 References::
-* http://www.blackwasp.co.uk/ObjectPool.aspx .
-* https://java-design-patterns.com/patterns/object-pool/ .
-* https://www.geeksforgeeks.org/multithreading-in-java/ .
-* https://asciidoctor.org/docs/asciidoc-writers-guide/ .
+* http://www.blackwasp.co.uk/ObjectPool.aspx
+* https://java-design-patterns.com/patterns/object-pool/
+* https://www.geeksforgeeks.org/multithreading-in-java/
+* https://github.com/ttnny/object-pool-example
+* https://plantuml.com/
+* https://asciidoctor.org/docs/asciidoc-writers-guide/
