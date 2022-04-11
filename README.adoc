@@ -5,7 +5,7 @@
 
 
 References::
-http://www.blackwasp.co.uk/ObjectPool.aspx .
-https://java-design-patterns.com/patterns/object-pool/ .
-https://www.geeksforgeeks.org/multithreading-in-java/ .
-https://asciidoctor.org/docs/asciidoc-writers-guide/ .
+* http://www.blackwasp.co.uk/ObjectPool.aspx .
+* https://java-design-patterns.com/patterns/object-pool/ .
+* https://www.geeksforgeeks.org/multithreading-in-java/ .
+* https://asciidoctor.org/docs/asciidoc-writers-guide/ .
