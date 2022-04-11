@@ -1,4 +1,4 @@
-# Multi Thread Safe Singleton Object Pool Design Pattern with Java
+# Object Pool implementation with multi-thread safe singleton with Java
 
 === Abstract
 
