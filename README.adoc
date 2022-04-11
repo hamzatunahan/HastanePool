@@ -14,12 +14,7 @@ constructing new objects, reusable objects are retrieved from the pool
 as required. When no longer needed, objects are returned to the pool
 rather than being destroyed.
 
-*_Singleton_*: Singleton is a creational
-design pattern, which ensures that only one object of its kind exists
-and provides a single point of access to it for any other code.
-Singleton has almost the same pros and cons as global variables.
-Although they’re very useful for storing shared data where you need it,
-they break the modularity of your code and unit testing becomes harder -
+*_Singleton_*: Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance. -
 
 *_Pool_*: The Pool class is the most important class in the object pool design pattern. It controls access to the pooled objects, maintaining a list of available objects and a collection of objects that have already been requested from the pool and are still in use. The pool also ensures that objects that have been released are returned to a suitable state, ready for the next time they are requested.
 
@@ -57,3 +52,4 @@ image::uml/UML.png[UML Diagram for This Example of Object Pool Design Pattern]
 * https://github.com/ttnny/object-pool-example
 * https://plantuml.com/
 * https://asciidoctor.org/docs/asciidoc-writers-guide/
+
