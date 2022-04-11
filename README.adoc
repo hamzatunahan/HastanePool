@@ -27,10 +27,6 @@ Because the Object pool is a singleton, this condition affects all instances.
 Four distinct threads were used in this operation.
 
 
-=== UML Diagram
-
-image::uml/UML.png[UML Diagram for This Example of Object Pool Design Pattern]
-
 = References
 * http://www.blackwasp.co.uk/ObjectPool.aspx
 * https://java-design-patterns.com/patterns/object-pool/
