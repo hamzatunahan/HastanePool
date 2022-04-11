@@ -29,7 +29,7 @@ Four distinct threads were used in this operation.
 
 === UML Diagram
 
-image::uml/UML.png
+image::uml/UML.png[UML Diagram for This Example of Object Pool Design Pattern]
 
 = References
 * http://www.blackwasp.co.uk/ObjectPool.aspx
