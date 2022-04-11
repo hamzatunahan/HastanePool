@@ -51,7 +51,7 @@ The Object Pool object defined outside the threads receives or leaves objects wi
 
 image::uml/UML.png[UML Diagram for This Example of Object Pool Design Pattern]
 
-== References
+= References
 
 
 References::
