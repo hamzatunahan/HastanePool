@@ -21,8 +21,7 @@ Singleton has almost the same pros and cons as global variables.
 Although they’re very useful for storing shared data where you need it,
 they break the modularity of your code and unit testing becomes harder -
 
-*_Pool_*: The most important class. It works as a controller to handle
-clients’ requests for reusable objects.
+*_Pool_*: The Pool class is the most important class in the object pool design pattern. It controls access to the pooled objects, maintaining a list of available objects and a collection of objects that have already been requested from the pool and are still in use. The pool also ensures that objects that have been released are returned to a suitable state, ready for the next time they are requested.
 
 *_Objects_*: The reusable objects that are expensive or slow to instantiate.
 
