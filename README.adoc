@@ -19,7 +19,6 @@ rather than being destroyed.
 
 *_Client_*: The class that requests to use object(s) in the pool.
 
-http://www.blackwasp.co.uk/ObjectPool.aspx[Blackwasp]
 ____
 === Scenarios
 *_Scenario 1_*: 10 pre-prepared objects are kept in the Object Pool.
