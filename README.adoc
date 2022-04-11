@@ -1,6 +1,4 @@
-# HastanePool
-
-== Multi Thread Safe Singleton Object Pool Design Pattern with Java
+# Multi Thread Safe Singleton Object Pool Design Pattern with Java
 
 === Abstract
 
