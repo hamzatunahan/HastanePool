@@ -21,7 +21,7 @@ When working with classes that are slow to initialize, the object pool pattern i
 However, no more than ten things are permitted. If there are ten objects in use, the requesters will be kept waiting. 15 distinct threads were started to make a request. Only ten of the fifteen threads were successful in retrieving objects from the object pool and returning it after usage.
 Five of the fifteen threads that were unable to obtain an object were forced to wait and continued to run after the object pool responded to the object request.
 
-_Scenario 2_: Each thread has a reference to the object pool object, which is specified as a Singleton.
+*_Scenario 2_*: Each thread has a reference to the object pool object, which is specified as a Singleton.
 Within themselves, all threads have the ability to adjust the size of the object pool.
 Because the Object pool is a singleton, this condition affects all instances.
 Four distinct threads were used in this operation.
