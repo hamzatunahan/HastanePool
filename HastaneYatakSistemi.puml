@@ -1,0 +1,34 @@
+@startuml
+class HastaneYatakSistemi.Client {
+- Integer id
++ void run()
+}
+class HastaneYatakSistemi.Pool {
+- {static} Pool pickerPool
+- ınt PickerCount
+- List<HastaneYatak> _available
+- List<HastaneYatak> _inUse
++ {static} Pool getInstance()
+- void createPickerPool(ınt)
++ HastaneYatak YatakBul()
++ void YatakBırak(HastaneYatak)
++ String toString()
+}
+class HastaneYatakSistemi.HastaneYatak {
++ ınt PickerId
++ String Carrying
++ ınt getPickerId()
++ void Drop()
++ void ShowMessage(String)
+}
+class HastaneYatakSistemi.Main {
++ {static} void main(String[])
+}
+
+
+HastaneYatakSistemi.Thread <|-- HastaneYatakSistemi.Client
+HastaneYatakSistemi.Pool -- HastaneYatakSistemi.Client : asks for available bed <
+HastaneYatakSistemi.Pool *- HastaneYatakSistemi.HastaneYatak:have 10
+HastaneYatakSistemi.Client -- HastaneYatakSistemi.HastaneYatak: take bed >
+HastaneYatakSistemi.Client -- HastaneYatakSistemi.HastaneYatak: returns >
+@enduml

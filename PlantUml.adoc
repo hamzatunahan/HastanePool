@@ -1,0 +1,37 @@
+# Object Pool implementation with multi-thread safe singleton with Java
+
+=== Abstract
+
+When working with classes that are slow to initialize, the object pool pattern is a design technique that can help. Reusable objects are pulled from the pool when needed, rather than creating new ones. Rather of being destroyed, things are returned to the pool when they are no longer needed.
+
+Singleton:: Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+Pool:: The Pool class is the most important class in the object pool design pattern. It controls access to the pooled objects, maintaining a list of available objects and a collection of objects that have already been requested from the pool and are still in use. The pool also ensures that objects that have been released are returned to a suitable state, ready for the next time they are requested.
+
+Objects:: The reusable objects that are expensive or slow to instantiate.
+
+Client:: The class that requests to use object(s) in the pool.
+
+=== UML Diagram
+image::uml/Uml.png[UML Diagram ]
+
+== Scenarios
+____
+*Scenario 1*:: The Object Pool has ten pre-prepared items.
+However, no more than ten things are permitted. If there are ten objects in use, the requesters will be kept waiting. 15 distinct threads were started to make a request. Only ten of the fifteen threads were successful in retrieving objects from the object pool and returning it after usage.
+Five of the fifteen threads that were unable to obtain an object were forced to wait and continued to run after the object pool responded to the object request.
+
+_Scenario 2_:: Each thread has a reference to the object pool object, which is specified as a Singleton.
+Within themselves, all threads have the ability to adjust the size of the object pool.
+Because the Object pool is a singleton, this condition affects all instances.
+Four distinct threads were used in this operation.
+____
+
+== References
+* http://www.blackwasp.co.uk/ObjectPool.aspx
+* https://java-design-patterns.com/patterns/object-pool/
+* https://www.geeksforgeeks.org/multithreading-in-java/
+* https://github.com/ttnny/object-pool-example
+* https://plantuml.com/
+* https://asciidoctor.org/docs/asciidoc-writers-guide/
+
